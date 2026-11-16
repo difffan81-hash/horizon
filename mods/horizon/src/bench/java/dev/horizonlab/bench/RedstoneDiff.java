@@ -84,6 +84,7 @@ public final class RedstoneDiff {
         }
         if (!wantStart) {
             wantStart = System.nanoTime() - setupAt > 1_000_000_000L;
+            /** return true? is no */
             return false;
         }
         if (!started) return false;
